@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+ <!--        <link rel="stylesheet" href="normalize.css" type="text/css">
+         <link rel="stylesheet" href="" type="text/css"> -->
+         <style>
+         .lightbox-outer{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0px;
+              top: 0px;
+              background-color: grey;
+              display: none;
+            }
+        .lightbox-inner{
+              text-align: center;
+            }
+         </style>
+</head>
+<body>
+
+
+    <a href="#" data-img="http://media-cdn.tripadvisor.com/media/photo-s/08/1c/b9/3a/awesome-small-plates.jpg" class="lightbox-link">Click here to add a name to your profile</a>
+
+  <div id="title">
+  </div>
+
+
+
+  <div class="lightbox-outer">
+    <div class="lightbox-inner">
+      <h2>Welcome to the french fry club! Please enter your name below.</h2>
+      <img src="" id="lightbox-image">
+      <br>
+      <input type="text" id="nameInfo"/>
+
+    </div>
+  </div>
+
+
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="modal.js"></script>
+
+</html>
