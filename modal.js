@@ -11,19 +11,25 @@ var name = "";
         $('.lightbox-outer').show();
 
 
+        $('.lightbox-outer').click(function(e){
 
-        $('#nameInfo').keydown(function(event){
+                   name = $('#nameInfo').val();
+
+                  $('.lightbox-outer').hide();
+                  $('#title').replaceWith("<h2>Welcome, " + name + "</h2>");
+         });
+
+            $('#nameInfo').keydown(function(event){
 
 
-          if(event.which === 13){
-               name = $('#nameInfo').val();
+              if(event.which === 13){
+                   name = $('#nameInfo').val();
 
-              $('.lightbox-outer').hide();
+                  $('.lightbox-outer').hide();
 
-
-              $('#title').replaceWith("<h2>Welcome, " + name + "</h2>");
-          }
-  });
+                  $('#title').replaceWith("<h2>Welcome, " + name + "</h2>");
+              }
+            });
 
 
 })
